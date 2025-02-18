@@ -1,0 +1,119 @@
+.formacao{
+background: #101010;
+color: #fff;
+}
+
+
+.formacao-container{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formacao-container::after{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../imagens_svg/decoraccao.svg") no-repeat center;
+  position: absolute;
+  position: relative;
+  bottom: -90px;
+  left: 20px;
+}
+
+.formacao .subtitulo{
+  color: #000000;
+  max-width: 5ch;
+}
+
+.formacao-texto{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #8F8F8F;
+}
+
+.formacao-texto strong{
+  color: #A8A8A8;
+}
+
+.cursos-lista{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 60px;
+  
+}
+
+.cursos{
+  background: #0A0A0A;
+  padding: 20px;
+ border-radius: 5px;
+}
+
+.cursos-tipo{
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cursos-tipo::before{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 20px;
+  background: linear-gradient(#471973, #7E40B8);
+  position: absolute;
+  left: -24px;
+}
+
+.cursos-instituicao{
+  font-size: 1.125rem;
+  color: #A8A8A8
+  
+}
+.idiomas{
+  position:relative
+}
+
+.idiomas h3::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height:24px;
+  background: url("../imagens_svg/idioma.svg") no-repeat center center;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.idiomas li{
+  line-height: 2rem;
+}
+
+@media (max-width: 800px){
+  .formacao-container{
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;  
+  }
+
+  .formacao .subtitulo{
+    color: #fff;
+  }
+
+  .formacao-texto{
+    font-size:1.25rem;
+  }
+
+  .idiomas h3::before{ 
+      position: initial;
+      margin-bottom: 10px;
+  }
+}
